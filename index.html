@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TooDooApp</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <script src="App.js" defer></script>
+  </head>
+  <body>
+    <div class="tooDooApp">
+      <h1>TooDooApp Task</h1>
+      <div class="TaskFelid">
+        <input type="text" placeholder="Task Name" />
+        <button class="addBtn">Add Task</button>
+      </div>
+      <ul class="TaskContainer">
+        <li>
+          <p>Tariqul Islam</p>
+          <div class="taskBtn">
+            <button class="edit">Edit</button>
+            <button class="status">Status</button>
+            <button class="delete">Delete</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
 </html>

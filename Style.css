@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+ul {
+  list-style: none;
+}
+body {
+  background-color: #cadffc8e;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.tooDooApp {
+  flex-basis: 100%;
+}
+.tooDooApp h1 {
+  text-align: center;
+  background-color: #97a1d3;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 10px 0 12px 0;
+  border-radius: 8px;
+  color: #003341;
+}
+.TaskFelid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  background-color: #97a1d3;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+.TaskFelid input {
+  background: #b9ebc6;
+  color: #413b35;
+  height: 45px;
+  border: unset;
+  border-radius: 6px;
+  font-size: 16px;
+  padding-left: 10px;
+  flex-grow: 1;
+}
+.TaskFelid input:focus {
+  outline: 2px solid #003341;
+}
+.TaskFelid .addBtn,
+.edit,
+.status,
+.delete {
+  background: #32c49d;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+  padding: 10px;
+  border: unset;
+  height: 45px;
+}
+.TaskContainer {
+  background-color: #97a1d3;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+.TaskContainer li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.TaskContainer li {
+  color: #003341;
+  font-size: 24px;
+}
+.TaskContainer li .taskBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.TaskContainer li .taskBtn .edit {
+  width: 80px;
+  height: 40px;
+  background: #004460;
+}
+.TaskContainer li .taskBtn .status {
+  width: 80px;
+  height: 40px;
+  background: #6b228b;
+}
+.TaskContainer li .taskBtn .delete {
+  width: 80px;
+  height: 40px;
+  background: #be042e;
+}
