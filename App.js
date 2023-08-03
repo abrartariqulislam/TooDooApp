@@ -22,13 +22,21 @@ input.addEventListener("keypress", function (e){
       addTask(inputText)
    }
 })
-
 addBtn.addEventListener("click", function (e){
    const inputText = input.value
    if (inputText){
       addTask(inputText)
    }
 })
+addBtn.addEventListener("mouseup", function (e){
+   this.style.backgroundColor = "#32c49d"
+})
+
+addBtn.addEventListener("mousedown", function (e){
+   this.style.backgroundColor = "#32c49d60"
+})
+
+
 TaskContainer.addEventListener("click" , function(e) {
    const targetElement = e.target
    if (targetElement.className === "delete"){
@@ -52,4 +60,27 @@ TaskContainer.addEventListener("click" , function(e) {
 
    }
 })
-
+TaskContainer.addEventListener("mousedown" , function(e){
+   const targetElement = e.target
+   if (targetElement.className === "status"){
+      targetElement.style.backgroundColor = "#6b228b80"
+   }
+   if(targetElement.className === "edit"){
+      targetElement.style.backgroundColor = "#00446080"
+   }
+   if(targetElement.className === "delete"){
+      targetElement.style.backgroundColor = "#be042e50"
+   }
+})
+TaskContainer.addEventListener("mouseup" , function(e){
+   const targetElement = e.target
+   if (targetElement.className === "status"){
+      targetElement.style.backgroundColor = "#6b228b"
+   }
+   if(targetElement.className === "edit"){
+      targetElement.style.backgroundColor = "#004460"
+   }
+   if(targetElement.className === "delete"){
+      targetElement.style.backgroundColor = "#be042e"
+   }
+})
