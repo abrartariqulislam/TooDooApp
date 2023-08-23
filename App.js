@@ -2,7 +2,7 @@ const input = document.querySelector(".TaskFelid input")
 const addBtn = document.querySelector(".TaskFelid .addBtn")
 const TaskContainer = document.querySelector(".TaskContainer")
 
-
+// Display
 function addTask (inputText){
 const li = document.createElement("li")
 li.innerHTML = `     
@@ -28,6 +28,7 @@ addBtn.addEventListener("click", function (e){
       addTask(inputText)
    }
 })
+// mouse event effect
 addBtn.addEventListener("mouseup", function (e){
    this.style.backgroundColor = "#32c49d"
 })
@@ -36,7 +37,7 @@ addBtn.addEventListener("mousedown", function (e){
    this.style.backgroundColor = "#32c49d60"
 })
 
-
+// edit,delete, change status
 TaskContainer.addEventListener("click" , function(e) {
    const targetElement = e.target
    if (targetElement.className === "delete"){
@@ -60,6 +61,8 @@ TaskContainer.addEventListener("click" , function(e) {
 
    }
 })
+
+// mouse event effect
 TaskContainer.addEventListener("mousedown" , function(e){
    const targetElement = e.target
    if (targetElement.className === "status"){
