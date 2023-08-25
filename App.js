@@ -9,7 +9,7 @@ li.innerHTML = `
    <p>${inputText}</p>
    <div class="taskBtn">
       <button class="edit">Edit</button>
-      <button class="status">Status Change </button>
+      <button class="status">Change Status</button>
       <button class="delete">Delete</button>
    </div>`
 TaskContainer.prepend(li)
